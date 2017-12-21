@@ -67,7 +67,7 @@ StepsPerDay<-Data %>%
 hist(StepsPerDay$steps, xlab="Number of steps per day",main="Histogram of steps per day")
 ```
 
-![](PA1_template_files/figure-markdown_github/steps-1.png)
+![](steps-1.png)
 
 Lastly, we calculated and reported the mean (saved as the variable Mean) and median (saved as the variable Median) of the total number of steps taken per day.
 
