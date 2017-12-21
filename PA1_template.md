@@ -93,7 +93,7 @@ plot(AvgSteps$interval, AvgSteps$steps,type="l", xlab = "Time intervals",
     ylab = "Average steps", main = "Average steps across time intervals")
 ```
 
-![](PA1_template_files/figure-markdown_github/interval-1.png)
+![](interval-1.png)
 
 Lastly, we determined Which 5-minute interval, on average across all the days in the dataset, contained the maximum number of steps and saved this as the value "Interval" along with the corresponding minute saved as the value "Minute".
 
@@ -136,7 +136,7 @@ AvgStepsImp<-ImputedData %>%
 hist(AvgStepsImp$steps, xlab="Number of steps per day",main="Histogram of steps per day")
 ```
 
-![](PA1_template_files/figure-markdown_github/impute-1.png)
+![](impute-1.png)
 
 We then calculated and reported the mean (saved as the variable Mean1) and median (saved as the variable Median1) of the total number of steps taken per day.
 
@@ -176,6 +176,6 @@ Graph<-ggplot(mean, aes(interval))+
 print(Graph)
 ```
 
-![](PA1_template_files/figure-markdown_github/days-1.png)
+![](days-1.png)
 
 We found that on weekdays more steps were taken in the earlier time intervals whereas on the weekend many steps were taken across all the time intervals.
