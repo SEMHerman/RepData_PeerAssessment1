@@ -4,6 +4,7 @@ author: "SEMHerman"
 date: "December 4, 2017"
 output: 
   html_document: 
+    fig_caption: yes
     keep_md: yes
 ---
 
@@ -23,35 +24,7 @@ Activity<-read.csv("activity.csv")
 Data<-as.data.frame(Activity)
 Data$date<-as.Date(Data$date, format="%Y-%m-%d")
 library(dplyr)
-```
-
-```
-## Warning: package 'dplyr' was built under R version 3.4.2
-```
-
-```
-## 
-## Attaching package: 'dplyr'
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 library(ggplot2)
-```
-
-```
-## Warning: package 'ggplot2' was built under R version 3.4.2
 ```
 
 ###What is mean total number of steps taken per day?
