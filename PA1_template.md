@@ -18,13 +18,22 @@ Necessary packages were loaded for the assignment.
 
 
 ```r
-zip<-"repdata_data_activity.zip" 
+library(here)
+library(dplyr)
+library(ggplot2)
+here()
+```
+
+```
+## [1] "C:/Users/hermanse/Desktop/11_Coursera/Course 5/WK2"
+```
+
+```r
+zip<-"repdata_data_activity.zip"
 unzip(zip,exdir=".")
 Activity<-read.csv("activity.csv")
 Data<-as.data.frame(Activity)
 Data$date<-as.Date(Data$date, format="%Y-%m-%d")
-library(dplyr)
-library(ggplot2)
 ```
 
 ###What is mean total number of steps taken per day?
